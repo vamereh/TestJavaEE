@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence">
+
+    <persistence-unit name="local-unit" transaction-type="JTA">
+        <jta-data-source>jdbc/__postgresql_local</jta-data-source>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <property name="eclipselink.logging.level" value="ALL"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
